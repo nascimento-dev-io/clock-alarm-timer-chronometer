@@ -1,0 +1,18 @@
+<div id="cronometro">
+  <main class="content-timer">
+    <h2>Timer</h2>
+
+    <div class="display-timer">
+        <input type="text" required min='01' max="24" value="00" maxlength="2" pattern="^[0-9][0-9]$" data-horas> : <input type="text"required min='01' max="24" value="00" maxlength="2" pattern="^[0-9][0-9]$" data-minutos> 
+    </div>
+    <div class="desc">
+      <span>Horas</span>
+      <span>Minutos</span>
+    </div>
+
+    <button onclick="iniciarTimer()" class="iniciar">Iniciar Timer</button>
+    <button onclick="resetar()">Resetar Timer</button>
+
+      <small>*Inserir apenas números</small>
+  </main>
+</div>

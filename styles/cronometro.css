@@ -1,0 +1,67 @@
+.content{
+  width: 500px;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.content h2{
+  font-size: 2.5rem;
+  color: chocolate;
+
+  margin: 0;
+}
+
+.content .display-cronometro{
+  width: 300px;
+  height: 200px;
+
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.text{
+  width: 280px;
+  height: 30px;
+  display: flex;
+
+  color: coral;
+
+  margin-bottom: 10px;
+}
+
+.text span{
+  margin-right: 50px;
+}
+
+.botoes button{
+  width: 100px;
+  height: 40px;
+
+  padding: 5px 10px;
+
+  border: none;
+  outline: none;
+
+  background-color: coral;
+
+  color: beige;
+
+  font-size: 1.2rem;
+
+  cursor: pointer;
+
+  transition: all .5s;
+}
+
+.botoes button:hover{
+  background-color: rgb(253, 109, 57);
+}

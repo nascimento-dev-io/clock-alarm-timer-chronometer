@@ -1,0 +1,182 @@
+
+html, body{
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  font-size: 16px;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(83, 81, 81);
+
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: bisque;
+}
+
+#content{
+  max-width: 900px;
+  width: 600px;
+
+  padding: 20px 30px;
+
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+
+  border-radius: 15px;
+
+  /* box-shadow: 2px -2px 5px 2px orangered; */
+
+  background-color: rgb(26, 13, 4);
+}
+
+#content .functions{
+  width: 100%;
+  height: 60px;
+
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-around;
+
+  border-radius: 15px;
+
+  margin-bottom: 10px;
+
+  background-color: rgba(247, 161, 111, 0.5);
+
+  transition: all .4s;
+}
+#content .functions:hover{
+  background-color: rgba(247, 161, 111, 0.6);
+}
+
+#content .functions div{
+  width: 60px;
+  height: 60px;
+
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  font-size: 1.1rem;
+
+  cursor: pointer;  
+  opacity: .6;
+
+  transition: all .8s;
+}
+
+#content .functions div:hover{
+  transform: scale(1.1);
+}
+
+.functions div:nth-child(1){
+  background-image: url(../assets/alarme.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.functions div:nth-child(2){
+  background-image: url(../assets/relogio.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+.functions div:nth-child(3){
+  background-image: url(../assets/timer.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.functions div:nth-child(4){
+  background-image: url(../assets/cronometro.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#content .functions .active{
+  opacity: 1;
+}
+
+#content #board{
+  width: 600px;
+  height: 500px;
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  background-color: rgb(14, 13, 13);
+}
+
+#board p{
+  font-size: 1.5rem;
+
+  color: aliceblue;
+
+  margin-top: 100px;
+
+  text-align: center;
+
+  opacity: .5;
+}
+
+#alarme, #relogio, #timer, #cronometro{
+  width: inherit;
+  height: 280px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+}
+
+/* clock */
+
+.content{
+  width: 500px;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.content h2{
+  font-size: 2.5rem;
+  color: chocolate;
+
+  margin: 0;
+}
+
+.content .display-relogio{
+  width: 300px;
+  height: 200px;
+
+  font-size: 3.5rem;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

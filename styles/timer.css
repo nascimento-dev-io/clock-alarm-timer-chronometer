@@ -1,0 +1,101 @@
+#cronometro{
+  align-items: initial ;
+}
+
+ .content-timer{
+  width: 500px;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content-timer h2{
+  font-size: 2.5rem;
+  color: chocolate;
+
+  margin: 0;
+}
+
+.content-timer .display-timer{
+  width: 300px;
+  height: 56px;
+
+  font-size: 4rem;
+  color: coral;
+
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-timer .display-timer input{
+  width: 80px;
+  height: 80px;
+
+  font-size: 4rem;
+
+  padding: 5px;
+  margin: 10px;
+  outline: none;
+
+  color: coral;
+
+  background:transparent ;
+
+  border: none;
+}
+
+.content-timer .display-timer input:invalid{
+  border: 2px dotted rgb(247, 113, 4);
+}
+
+.content-timer > small{
+  color: coral;
+
+  font-size: .8rem;
+
+  margin-top: 30px;
+}
+
+.desc{
+  width: 300px;
+  height: auto;
+
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.desc span{
+  font-size: 1rem;
+
+  color: coral;
+
+}
+.desc span:first-child{
+  margin-right: 20px;
+}
+
+.content-timer button{
+  width: 200px;
+  height: 40px;
+
+  padding: 8px 15px;
+
+  border: none;
+
+  background-color: coral;
+  margin-top: 20px;
+  color: beige;
+
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
+
+  transition: all .5s;
+}
